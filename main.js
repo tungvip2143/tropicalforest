@@ -231,31 +231,35 @@ function addCartClicked(event) {
     updateTotal();
 }
 
+
 function addProductToCart(title, price, productImg) {
     let cartShopBox = document.createElement("div")
     cartShopBox.classList.add('cart-box')
-    let cartItems = document.getElementsByClassName('cart-content')[0];
-    let cartItemsNames = cartItems.getElementsByClassName('cart-product-title')
-    for (let i = 0; i < cartItemsNames.length; i++) {
+    let cartItems = document.getElementsByClassName("cart-content")[0];
+    let cartItemsNames = cartItems.getElementsByClassName("cart-product-title");
+    let namessIndex = cartItemsNames.length;
+    for (let i = 0; i < namessIndex; i += 1) {
         if (cartItemsNames[i].innerText == title) {
-            alert('You have already add this item to cart');
+            alert('You have already add this item to your cart')
             return;
         }
+
     }
     let cartBoxContent = `
-<img src="${productImg}" , alt=" " class="cart-img" />
-<div class="detail-box">
-    <h3 class="cart-product-title">${title}</h3>
-    <div class="cart-price">${price}</div>
-    <input type="number" value="1" class="cart-quantity" />
-</div>
-<!-- remove cart -->
-<i class="bx bxs-trash-alt cart-remove"></i>`;
+    <img src="${productImg}" , alt=" " class="cart-img" />
+    <div class="detail-box">
+        <h3 class="cart-product-title">${title}</h3>
+        <div class="cart-price">${price}</div>
+        <input type="number" value="1" class="cart-quantity" />
+    </div>
+    <!-- remove cart -->
+    <i class="bx bxs-trash-alt cart-remove"></i>`;
     cartShopBox.innerHTML = cartBoxContent;
     cartItems.append(cartShopBox);
     cartShopBox.getElementsByClassName('cart-remove')[0].addEventListener('click', removeCartItem)
     cartShopBox.getElementsByClassName('cart-quantity')[0].addEventListener('change', quantityChanged)
 }
+
 
 // update total
 function updateTotal() {

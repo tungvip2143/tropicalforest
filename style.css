@@ -219,7 +219,7 @@ img {
 
 .cart-product-title {
     font-size: 0.944vw;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 
 .cart-price {
