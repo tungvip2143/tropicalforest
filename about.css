@@ -316,8 +316,8 @@ img {
 }
 
 .about-content-2:hover {
-    background: rgba(81, 81, 81, 0.707);
-    color: var(--main-color);
+    background: rgba(137, 0, 0, 0.707);
+    color: rgb(174, 247, 255);
     text-shadow: 10px 10px 10px var(--main-color);
 }
 
@@ -333,6 +333,7 @@ img {
     font-style: italic;
     line-height: 1.652vw;
     font-size: 1.062vw;
+    padding-bottom: 1.593vw;
 }
 
 .about-content-2 p span {

@@ -8,6 +8,7 @@
     <title>HOME</title>
 
     <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" /> ">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
     <!-- custom css file link  -->
     <link rel="stylesheet" href="style.css" />
@@ -20,7 +21,7 @@
         <!-- header section starts -->
         <div class="header">
             <a href="#" class="logo">
-                <img src="/img/Untitled-1.png" alt="" />
+                <img src="img/Untitled-1.png" alt="" />
             </a>
 
             <!-- navbar -->
@@ -45,31 +46,17 @@
 
             <!-- cart-->
             <div class="cart-items-container">
-                <div class="cart-item">
-                    <span class="fas fa-times"></span>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Tazzina_di_caff%C3%A8_a_Ventimiglia.jpg" , alt=" " />
-                    <div class="content">
-                        <h3>Espresso</h3>
-                        <div class="price">40.000vnd</div>
-                    </div>
+                <h2 class="cart-title">Your Cart</h2>
+                <!-- content -->
+                <div class="cart-content"></div>
+
+                <!-- total -->
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">0$</div>
                 </div>
-                <div class="cart-item">
-                    <span class="fas fa-times"></span>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Wet_Cappuccino_with_heart_latte_art.jpg?20090314201738" , alt=" " />
-                    <div class="content">
-                        <h3>Cappuccino</h3>
-                        <div class="price">40.000vnd</div>
-                    </div>
-                </div>
-                <div class="cart-item">
-                    <span class="fas fa-times"></span>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Mocaccino-Coffee.jpg/1280px-Mocaccino-Coffee.jpg?20170831073517" , alt=" " />
-                    <div class="content">
-                        <h3>Mocha</h3>
-                        <div class="price">45.000vnd</div>
-                    </div>
-                </div>
-                <a href="#" class="btn">checkout now</a>
+                <!-- buy btn -->
+                <button type="button" class="btn-buy">Buy Now</button>
             </div>
         </div>
         <!-- header section ends -->
@@ -281,45 +268,57 @@
             <hr />
             <div class="box-container">
                 <div class="box">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/640px-A_small_cup_of_coffee.JPG" alt="" />
-                    <h3>Black</h3>
-                    <div class="price">30.000VND</div>
-                    <a href="" class="btn">add to cart</a>
+                    <div class="menu-content">
+                        <img class="product-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/640px-A_small_cup_of_coffee.JPG" alt="" />
+                        <h3 class="product-title">Black</h3>
+                        <span class="price">3$</span>
+                        <i class="bx bx-shopping-bag add-cart"></i>
+                    </div>
                 </div>
 
                 <div class="box">
-                    <img src="img/7.jpg" alt="" />
-                    <h3>Latte</h3>
-                    <div class="price">40.000VND</div>
-                    <a href="" class="btn">add to cart</a>
+                    <div class="menu-content">
+                        <img src="img/7.jpg" alt="" class="product-img" />
+                        <h3 class="product-title">Latte</h3>
+                        <div class="price">3.5$</div>
+                        <i class="bx bx-shopping-bag add-cart"></i>
+                    </div>
                 </div>
 
                 <div class="box">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Wet_Cappuccino_with_heart_latte_art.jpg" alt="" />
-                    <h3>Cappuccino</h3>
-                    <div class="price">40.000VND</div>
-                    <a href="" class="btn">add to cart</a>
+                    <div class="menu-content">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Wet_Cappuccino_with_heart_latte_art.jpg" alt="" class="product-img" />
+                        <h3 class="product-title">Cappuccino</h3>
+                        <div class="price">2$</div>
+                        <i class="bx bx-shopping-bag add-cart"></i>
+                    </div>
                 </div>
 
                 <div class="box">
-                    <img src="img/8.jpg" alt="" />
-                    <h3>Americano</h3>
-                    <div class="price">40.000VND</div>
-                    <a href="" class="btn">add to cart</a>
+                    <div class="menu-content">
+                        <img src="img/8.jpg" alt="" class="product-img" />
+                        <h3 class="product-title">Americano</h3>
+                        <div class="price">3$</div>
+                        <i class="bx bx-shopping-bag add-cart"></i>
+                    </div>
                 </div>
 
                 <div class="box">
-                    <img src="img/10.jpg" alt="" />
-                    <h3>Espresso</h3>
-                    <div class="price">45.000VND</div>
-                    <a href="" class="btn">add to cart</a>
+                    <div class="menu-content">
+                        <img src="img/10.jpg" alt="" class="product-img" />;
+                        <h3 class="product-title">Espresso</h3>
+                        <div class="price">4$</div>
+                        <i class="bx bx-shopping-bag add-cart"></i>
+                    </div>
                 </div>
 
                 <div class="box">
-                    <img id="img6" src="img/9.jpg" alt="" />
-                    <h3>Doppio</h3>
-                    <div class="price">45.000VND</div>
-                    <a href="" class="btn">add to cart</a>
+                    <div class="menu-content">
+                        <img id="img6" src="img/9.jpg" alt="" class="product-img" />
+                        <h3 class="product-title">Doppio</h3>
+                        <div class="price">2.5$</div>
+                        <i class="bx bx-shopping-bag add-cart"></i>
+                    </div>
                 </div>
             </div>
         </div>
