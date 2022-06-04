@@ -407,6 +407,9 @@ img {
         display: inline-block;
     }
     /* css header */
+    .icons {
+        display: inherit;
+    }
     .header .navbar {
         position: absolute;
         top: 100%;
@@ -434,5 +437,8 @@ img {
     .header .search-form {
         width: 90%;
         right: 2rem;
+    }
+    .cart-items-container {
+        right: -200%;
     }
 }
