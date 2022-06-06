@@ -194,8 +194,8 @@ function take_decimal_number(num, n) {
 }
 //Fake the price of menuCoffee
 for (let i = 0; i < coffeeList.length; i++) {
-    let price = Math.round(Math.random() * 50 + 5);
-    coffeeList[i].price = price + ".000" + " VND";
+    let price = Math.round(Math.random() + 2);
+    coffeeList[i].price = "$" + price;
 }
 
 for (let i = 0; i < coffeeList.length; i++) {
@@ -207,6 +207,8 @@ for (let i = 0; i < 10; i++) {
     const divPartMenu = document.createElement("div");
     divPartMenu.className = "coffee";
     divPartMenu.style.width = "100%";
+
+
     //Create the layout1 divPartMenu
     const menuPart1 = document.querySelector(".menu-part1");
     //append to menuPart1
@@ -219,8 +221,7 @@ for (let i = 0; i < 10; i++) {
     imgPart.style.maxWidth = "100%";
     imgPart.src = coffeeList[i].image;
     divPartMenu.appendChild(imgPart);
-    imgPart.style.width = "100px";
-    imgPart.style.height = "70%";
+
 
     //create detail information about the coffee inside div
     const detailPart = document.createElement("div");
@@ -262,8 +263,7 @@ for (let i = 10; i < 20; i++) {
     imgPart.style.maxWidth = "100%";
     imgPart.src = coffeeList[i].image;
     divPartMenu.appendChild(imgPart);
-    imgPart.style.width = "100px";
-    imgPart.style.height = "70%";
+
 
     //create detail information about the coffee inside div
     const detailPart = document.createElement("div");
