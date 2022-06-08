@@ -133,6 +133,27 @@ img {
 }
 
 
+/* css user */
+
+.user-form {
+    position: absolute;
+    top: 115%;
+    right: 5%;
+    background-color: #fff;
+    width: 30rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    transform: scaleY(0);
+    transform-origin: top;
+    border: 2px solid var(--main-color);
+}
+
+.user-form.active {
+    transform: scaleY(1);
+}
+
+
 /* css search-form */
 
 .search-form {
@@ -549,5 +570,22 @@ img {
     }
     .about-content-3 {
         top: 12px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .about-content-3 {
+        top: 30px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    /* footer */
+    .footer .share a {
+        width: 1rem;
+    }
+    /* about */
+    .about-content-3 {
+        top: 46px;
     }
 }
