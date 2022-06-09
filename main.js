@@ -346,5 +346,6 @@ if (getUser !== null) {
             window.location.href = "index.html"
         }
     })
-
 }
+
+//

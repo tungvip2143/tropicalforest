@@ -141,6 +141,145 @@ img {
 }
 
 
+/* css user */
+
+.user-form {
+    position: absolute;
+    top: 115%;
+    right: 5%;
+    background-color: #fff;
+    width: 300px;
+    transform: scaleY(0);
+    transform-origin: top;
+    border: 2px solid var(--main-color);
+    border-radius: 15px;
+}
+
+.user-form h3 {
+    margin: 10px auto;
+    width: fit-content;
+    color: var(--black);
+    font-family: "Oswald", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.login-form {
+    width: 250px;
+    margin: 0 auto;
+}
+
+.login-form label {
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    text-transform: none;
+    color: var(--black);
+    font-size: 1rem;
+}
+
+.login-form input {
+    width: 100%;
+    margin: 5px 0;
+    padding: 3px 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.error-login {
+    display: none;
+    padding-top: 5px;
+    color: #e82228;
+    clear: both;
+    text-transform: none;
+    font-family: "Oswald", sans-serif;
+    font-size: 12px;
+}
+
+.error-login em {
+    display: inline-block;
+    padding-right: 10px;
+    width: 8px;
+    height: 8px;
+    background: url(https://sso.garena.com/images/error.png) no-repeat 0 0;
+}
+
+.error-pass {
+    display: none;
+    padding-top: 5px;
+    color: #e82228;
+    clear: both;
+    text-transform: none;
+    font-family: "Oswald", sans-serif;
+    font-size: 12px;
+}
+
+.error-pass em {
+    display: inline-block;
+    padding-right: 10px;
+    width: 8px;
+    height: 8px;
+    background: url(https://sso.garena.com/images/error.png) no-repeat 0 0;
+}
+
+.login-row {
+    width: 200px;
+    margin: 20px auto 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.login-row input {
+    border: none;
+    border-radius: 10px;
+    padding: 6px 10px;
+    cursor: pointer;
+    background-color: var(--main-color);
+    color: white;
+}
+
+.login-row input:hover {
+    background-color: white;
+    color: var(--main-color);
+    box-shadow: 0 0 5px var(--main-color), 0 0 10px var(--main-color), 0 0 15px var(--main-color);
+    transition: 0.5s;
+}
+
+.login-row .signup {
+    background-color: #633800;
+}
+
+.user-form.active {
+    transform: scaleY(1);
+}
+
+.my-login {
+    position: absolute;
+    top: 115%;
+    right: 5%;
+    background-color: #fff;
+    width: 300px;
+    transform: scaleY(0);
+    transform-origin: top;
+    border: 2px solid var(--main-color);
+    border-radius: 15px;
+    display: none;
+    text-transform: none;
+    padding: 5px 10px;
+    font-family: "Oswald", sans-serif;
+}
+
+.my-login.active {
+    transform: scaleY(1);
+}
+
+
+/* signout button */
+
+#signout-btn {
+    display: none;
+}
+
+
 /* css search-form */
 
 .search-form {
@@ -201,7 +340,7 @@ img {
 .cart-title {
     margin-top: 15px;
     text-align: center;
-    font-size: 1.416vw;
+    font-size: 20px;
 }
 
 .cart-items-container.active {
@@ -213,6 +352,7 @@ img {
     grid-template-columns: 32% 50% 18%;
     align-items: center;
     gap: 1rem;
+    padding-right: 20px;
 }
 
 .cart-box .detail-box {
@@ -259,13 +399,13 @@ img {
 }
 
 .total-title {
-    font-size: 0.944vw;
+    font-size: 16px;
     font-weight: 600;
 }
 
 .total-price {
     margin-left: 0.472vw;
-    font-size: 0.944vw;
+    font-size: 16px;
 }
 
 .btn-buy {
@@ -275,7 +415,7 @@ img {
     border: none;
     color: #fff;
     background-color: var(--main-color);
-    font-size: 0.944vw;
+    font-size: 16px;
     font-weight: 500;
     cursor: pointer;
 }
@@ -539,6 +679,20 @@ img {
     /* footer */
     .footer .share a {
         width: 2rem;
+    }
+    /* cart */
+    .cart-title {
+        font-size: 15px;
+        padding: 0 10px;
+    }
+    .total-title {
+        font-size: 12px;
+    }
+    .total-price {
+        font-size: 12px;
+    }
+    .btn-buy {
+        font-size: 12px;
     }
     /* menu */
     .menu-part {

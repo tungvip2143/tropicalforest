@@ -27,10 +27,39 @@
             </div>
             <!-- icons -->
             <div class="icons">
+                <div class="fa-solid fa-user" id="user-btn"></div>
                 <div class="fas fa-search" id="search-btn"></div>
                 <div class="fas fa-shopping-cart" id="cart-btn"></div>
                 <div class="fas fa-bars" id="menu-btn"></div>
+                <div class="fa-solid fa-right-from-bracket" id="signout-btn"></div>
             </div>
+
+            <!-- user-form starts-->
+            <div class="my-login">
+                <h3>Đăng nhập</h3>
+            </div>
+            <div class="user-form">
+                <h3>Đăng nhập</h3>
+                <form class="login-form">
+                    <label for>Tên đăng nhập</label>
+                    <input type="text" class="username" />
+                    <label for>Mật khẩu</label>
+                    <input type="password" class="password" />
+                    <span class="error-login">
+              <em></em>
+              Nhập tên tài khoản hoặc email
+            </span>
+                    <span class="error-pass">
+              <em></em>
+              Nhập mật khẩu
+            </span>
+                    <div class="login-row">
+                        <input type="submit" class="login" value="Đăng nhập" />
+                        <input type="submit" class="signup" value="Đăng ký" />
+                    </div>
+                </form>
+            </div>
+            <!-- user-form ends -->
             <div class="search-form">
                 <input type="search" id="search-box" placeholder="Search here..." />
                 <label for="search-box" class="fas fa-search"></label>

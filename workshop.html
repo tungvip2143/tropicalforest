@@ -34,11 +34,39 @@
 
             <!-- icons -->
             <div class="icons">
+                <div class="fa-solid fa-user" id="user-btn"></div>
                 <div class="fas fa-search" id="search-btn"></div>
                 <div class="fas fa-shopping-cart" id="cart-btn"></div>
                 <div class="fas fa-bars" id="menu-btn"></div>
+                <div class="fa-solid fa-right-from-bracket" id="signout-btn"></div>
             </div>
-
+            <!-- user-form starts-->
+            <div class="my-login">
+                <h3>Đăng nhập</h3>
+            </div>
+            <div class="user-form">
+                <h3>Đăng nhập</h3>
+                <form class="login-form">
+                    <label for>Tên đăng nhập</label>
+                    <input type="text" class="username" />
+                    <label for>Mật khẩu</label>
+                    <input type="password" class="password" />
+                    <span class="error-login">
+              <em></em>
+              Nhập tên tài khoản hoặc email
+            </span>
+                    <span class="error-pass">
+              <em></em>
+              Nhập mật khẩu
+            </span>
+                    <div class="login-row">
+                        <input type="submit" class="login" value="Đăng nhập" />
+                        <input type="submit" class="signup" value="Đăng ký" />
+                    </div>
+                </form>
+            </div>
+            <!-- user-form ends -->
+            <!-- search-form -->
             <div class="search-form">
                 <input type="search" id="search-box" placeholder="Search here..." />
                 <label for="search-box" class="fas fa-search"></label>
@@ -120,6 +148,53 @@
             </div>
         </div>
 
+        <!-- book start-->
+        <div class="book-title">
+            <p class="book-heading">What Happens Here</p>
+            <div class="title">
+                <h1>Đặt lịch tham gia Workshop</h1>
+                <hr />
+            </div>
+        </div>
+        <div class="book-wrapper">
+            <div class="book-container">
+                <div class="book-img"></div>
+                <form action="" class="book-form">
+                    <h3>Thông tin Treeman</h3>
+                    <div class="form-options">
+                        <label for="options">Lựa chọn Workshop</label>
+                        <select name="options" id="options" required>
+                <option value="">Chọn</option>
+                <option value="">Workshop Kokedama</option>
+                <option value="">Worshop Terrarium</option>
+                <option value="">Workshop Trẻ em</option>
+                <option value="">Worshop Tái chế</option>
+              </select>
+                    </div>
+                    <div class="form-options">
+                        <label for="date" id="date">Ngày đặt</label>
+                        <input type="date" class="date" placeholder="Chọn ngày" required />
+                    </div>
+                    <div class="form-options">
+                        <div class="items-options">
+                            <label for="name">Họ và tên</label>
+                            <input type="text" name="name" id="name" placeholder="Họ và tên của bạn" required />
+                        </div>
+                        <div class="items-options">
+                            <label for="name">Số điện thoại</label>
+                            <input type="text" name="name" id="phone" placeholder="SĐT" required />
+                        </div>
+                    </div>
+                    <div class="form-options">
+                        <label for="note">Ghi chú </label>
+                        <textarea id="note" cols="30" rows="10" placeholder="Ghi chú của bạn"></textarea>
+                    </div>
+                    <button class="book-btn btn">Đặt lịch</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- book ends -->
         <!-- footer  starts  -->
         <div class="footer">
             <div class="share">
